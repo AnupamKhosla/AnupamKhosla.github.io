@@ -1,2 +1,2 @@
-# AnupamKhosla.github.io
+# anupamkhosla.github.io
 My website template project
