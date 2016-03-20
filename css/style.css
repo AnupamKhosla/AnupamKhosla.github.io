@@ -243,6 +243,9 @@ ul li a:hover {
 .bodyleft {
 		  width: 100%;
 				}
+.left h2 {
+		  text-align: center;
+        }
 .bodyright {
 			 display: none;
 		   }
