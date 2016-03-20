@@ -75,11 +75,11 @@ ul li a:hover {
 .photo_container {
 			
 			width: 100%;
-			height: 50%;
+			height: 65%;
 			background-color: black;
 			position: relative;
-			padding-left: 15px;
-			padding-right: 15px;
+			
+			
       }
 	  
 .photo_container > img{
@@ -87,6 +87,18 @@ ul li a:hover {
 				display: block;
 				position: absolute;
 				left: 0; right:0; top:0; bottom:0; margin: auto;
+				
+                   }
+.photo_container > iframe{
+				
+				display: block;
+				position: absolute;
+				width: 90%;
+				height: 90%;
+				left: 0; right:0; top:0; bottom:0; margin: auto;
+				border: 0;
+				object-fit: fill;
+				
 				
                    }
 				   
@@ -97,11 +109,26 @@ ul li a:hover {
 		  
 }
 .bodycontainer2 {
-		  width: 80%;
+		  
+		  width: 90%;
 		  background-color: #666633;
 		  margin: auto;
 		  text-align: justify;
 		  }
+.bodycontainer3 {
+					
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					padding-top: 5px;
+					
+				}
+		  
+.bodycontainer3 iframe {
+						
+						padding: 15px;
+						border: 0;
+					 }
 .bodycontainer2:after {
 						content: " ";
 						height: 0;
@@ -253,8 +280,9 @@ ul li a:hover {
 						 float: none;
 						 width: 100%;
 						}
-
-					
+.bodycontainer3 iframe {
+						width: 250px;
+}				
 
 	 
 		 
