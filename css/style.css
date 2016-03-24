@@ -89,14 +89,13 @@ ul li a:hover {
 				left: 0; right:0; top:0; bottom:0; margin: auto;
 				
                    }
-.photo_container > iframe{
+.photo_container > iframe {
 				
 				display: block;
 				position: absolute;
 				width: 90%;
 				height: 90%;
 				left: 0; right:0; top:0; bottom:0; margin: auto;
-				border: 0;
 				object-fit: fill;
 				
 				
@@ -105,7 +104,7 @@ ul li a:hover {
 .bodycontainer {
 		  width: 100%;
 		  background-color: #666633;
-		  padding-bottom: 10px;
+		  
 		  
 }
 .bodycontainer2 {
@@ -114,21 +113,30 @@ ul li a:hover {
 		  background-color: #666633;
 		  margin: auto;
 		  text-align: justify;
+		  padding: 
 		  }
 .bodycontainer3 {
 					
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
-					padding-top: 5px;
+					padding: 30px 0;
 					
 				}
 		  
 .bodycontainer3 iframe {
 						
-						padding: 15px;
-						border: 0;
+						margin: 1%;
+						width: 31%;
+						
 					 }
+iframe:hover {
+			  border: 3px solid white;
+			  
+}	
+iframe {
+		border: 3px solid black;
+}				 
 .bodycontainer2:after {
 						content: " ";
 						height: 0;
@@ -280,11 +288,25 @@ ul li a:hover {
 						 float: none;
 						 width: 100%;
 						}
-.bodycontainer3 iframe {
-						width: 250px;
-}				
-
+.bodycontainer3 iframe {						
+						margin: 1%;
+						width: 48%;
+					 }			
+.bodycontainer3 {
+				  padding: 30px 0;
+}
 	 
 		 
+}
+@media (max-width: 400px)
+{
+.bodycontainer3 iframe {						
+						width: 95%;	
+						
+					 }
+.bodycontainer3 {
+				  padding: 15px 0;
+}
+
 }
 /* End of mobile css */	
