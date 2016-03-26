@@ -89,7 +89,7 @@ ul li a:hover {
 				left: 0; right:0; top:0; bottom:0; margin: auto;
 				
                    }
-.photo_container > iframe{
+.photo_container > iframe {
 				
 				display: block;
 				position: absolute;
@@ -98,8 +98,7 @@ ul li a:hover {
 				left: 0; right:0; top:0; bottom:0; margin: auto;
 				border: 0;
 				object-fit: fill;
-				
-				
+				border: 2px solid black;				
                    }
 				   
 .bodycontainer {
@@ -116,19 +115,27 @@ ul li a:hover {
 		  text-align: justify;
 		  }
 .bodycontainer3 {
-					
+					width: 100%;
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
-					padding-top: 5px;
-					
+					padding: 10px 0;
+					padding-bottom: 0;
 				}
 		  
 .bodycontainer3 iframe {
-						
-						padding: 15px;
-						border: 0;
+						display: block;
+						width: 32%;
+						margin: 1%;
 					 }
+.bodycontainer3 iframe:nth-of-type(1),
+.bodycontainer3 iframe:nth-of-type(4) {
+										margin-left: 0;
+}
+.bodycontainer3 iframe:nth-of-type(3),
+.bodycontainer3 iframe:nth-of-type(6) {
+										margin-right: 0;
+}
 .bodycontainer2:after {
 						content: " ";
 						height: 0;
@@ -136,6 +143,12 @@ ul li a:hover {
 						display: block;
 						clear: both;
 }		  
+iframe {
+		border: 2px solid black;
+}
+iframe:hover {
+			 border: 2px solid white;
+}
 				   
 .bodyleft {
 		 width: 65%;		 
@@ -198,7 +211,14 @@ ul li a:hover {
 						width: 0;
 						display: block;
 						clear: both;
-}		  
+}
+audio {
+	   display: block;
+	   width: 80%;
+	   height: 200px;
+	   
+}
+		  
 
 footer {
   line-height: 1.5;
@@ -227,7 +247,7 @@ footer a:hover {
 }
 
 
-/* For mbile devices */		 
+/* For mobile devices */		 
 @media (max-width: 770px) 
 {		 
 	
@@ -280,11 +300,34 @@ ul li a:hover {
 						 float: none;
 						 width: 100%;
 						}
+
 .bodycontainer3 iframe {
-						width: 250px;
-}				
+						width: 49%;
+						margin: 1%;
+					 }
+.bodycontainer3 iframe:nth-of-type(2n+1) {
+										margin-left: 0; margin-right: 1%;
+}
+.bodycontainer3 iframe:nth-of-type(2n) {
+										margin-right: 0; margin-left: 1%;
+}			
 
 	 
 		 
 }
 /* End of mobile css */	
+
+@media (max-width: 480px)
+{
+.bodycontainer3 iframe {
+						width: 100%;
+						margin-bottom: 1%;
+					 }
+.bodycontainer3 iframe:nth-of-type(2n+1) {
+										margin-left: 0; margin-right: 0%;
+}
+.bodycontainer3 iframe:nth-of-type(2n) {
+										margin-right: 0; margin-left: 0%;
+}		
+
+}
