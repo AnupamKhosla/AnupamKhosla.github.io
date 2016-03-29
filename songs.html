@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Songs</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet"  href="css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<script type="text/javascript">
+function toggle_visibility(id)
+ {
+    var ul = document.getElementById('links');
+	var mq = window.matchMedia( "(min-width: 770px)" );
+    
+   
+	if(ul.style.display == 'none'  )
+      {
+        ul.style.display = 'block';
+        
+      }
+     else
+      {
+        ul.style.display = 'none';
+        
+      }
+ }
+	
+</script>
+
+</head>
+<body>
+
+<header>
+<h1 class="heading"> Syco Scientist Records </h1>
+</header>
+ 
+<nav>
+<div id=navbutton onclick="toggle_visibility(links)">
+	<div>Navigation</div>
+    <ul id="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="songs.html" class="active">Songs</a></li>
+            <li><a href="beats.html">Beats</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+	
+</div>
+</nav>
+
+<div class="photo_container">
+   <iframe  src="https://www.youtube.com/embed/Q5911Zy7Jos?playlist=r2rmtwOFLx0,AA_TxwrizzQ,OaRCWjp4WFo,lwbs1BQr0qI,q3gOHGbppIc" autoplay="0" allowfullscreen="allowfullscreen"> 
+   </iframe>
+</div>
+	
+<div class="bodycontainer">
+<div class="bodycontainer2">
+<div class="bodycontainer3">
+
+<iframe  src="https://www.youtube.com/embed/Q5911Zy7Jos?autoplay=0" autoplay="0" allowfullscreen="allowfullscreen"> </iframe>
+<iframe  src="https://www.youtube.com/embed/r2rmtwOFLx0?autoplay=0" autoplay="0" allowfullscreen="allowfullscreen"> </iframe>
+<iframe  src="https://www.youtube.com/embed/AA_TxwrizzQ?autoplay=0" autoplay="0" allowfullscreen="allowfullscreen"> </iframe>
+
+
+
+<iframe  src="https://www.youtube.com/embed/OaRCWjp4WFo?autoplay=0" autoplay="0" allowfullscreen="allowfullscreen"> </iframe>
+<iframe  src="https://www.youtube.com/embed/lwbs1BQr0qI?autoplay=0" autoplay="0" allowfullscreen="allowfullscreen"> </iframe>
+<iframe  src="https://www.youtube.com/embed/q3gOHGbppIc?autoplay=0" autoplay="0" allowfullscreen="allowfullscreen"> </iframe>
+
+</div>
+</div>
+</div>
+ 
+
+
+<footer>
+	  <a href="index.html">Home</a> | <a href="songs.html">Songs</a> | <a href="beats.html">Beats</a> | <a href="store.html">Store</a> | <a href="contact.html">Contact Us</a><br/>
+	  <span class="khapispan">Website template by <a href="index.html">Anupam Khosla</a></span>
+</footer>
+  
+
+
+
+</body>
+</html>
